@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<!--
+ASSIGNMENT RULES
+- The solution must be pushed to the repository and be available for the tutors by the end of the day.
+- You can ask for tutor's help.
+- You can google / use StackOverflow BUT we suggest you to use just the material provided.
+- To test the page, just open it with your default browser.
+- Use Bootstrap4 classes to render the page.
+- Use correctly containers and rows in order to achieve a great display.
+ASSIGNMENT TOPIC
+You are creating a website to showcase your favourite music albums.
+In this page you'd like to have a short bio of yourself, the top albums of your life, 
+the worst album you ever listen to and everything related to the music you love.
+NOTE:
+Most of the times, even the most expert of designers needs inspiration.
+Spend 30 minutes surfing the web and searching for the way of rapresenting album that you like the most.
+Could be the Amazon way, the Spotify or Apple music way or some other blog out there.
+-->
+
+<html lang="en">
+  <head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8" />
+     <meta
+       name="viewport"
+       content="width=device-width, initial-scale=1, shrink-to-fit=no"
+     />
+ 
+     <!-- Bootstrap CSS -->
+     <link
+       rel="stylesheet"
+       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+       crossorigin="anonymous">
+</head>
+<body>
+       <!-- 
+      /* EXERCISE 1
+            For all Albums we'd like to have a consistent style.
+            Create a class for:
+            - The album container
+            - The album cover
+            - The album title
+            - The album group / singer / dj
+            - The album genre
+            - The album duration
+            - etc
+         */
+             -->
+    
+    <!-- EXERCISE 2 
+            Implement a navigation bar using the bootstrap component
+            This navigation bar must be linked to every section in your page
+        -->
+        <div class = "container">
+               <!-- NAVIGATIION SECTION -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-music-note-beamed" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
+                <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
+              </svg></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+         </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+ <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">
+                          Action</a>
+  <a>class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                      Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-music-note-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                    <path fill-rule="evenodd" d="M12 3v10h-1V3h1z"/>
+                    <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z"/>
+                    <path fill-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
+                  </svg></button>
+              </form>
+            </div>
+          </nav>
+ <!-- HERO SECTION -->
+          <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Stevie's Music Journey</h1>
+              <p class="lead">Music Milestones</p>
+            </div>
+          </div>
+<!-- ALBUM CARDS-->
+   <div class="row">
+    <div class="card col-sm-6 col-md-4 col-lg-3"><img src="images/Prince-Parade-Cover.jpg" class="card-img-top" alt="Prince-Parade-Cover.">
+        <div class="card-body">
+                  <h5 class="card-title">1986</h5>
+                  <p class="card-text">Birth Year</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Prince & The Revolution</li>
+                  <li class="list-group-item">Parade</li>
+                  <li class="list-group-item">Psychedelic pop</li>
+                  <li class="list-group-item">
+                      <ol> 
+                        <li>"Christopher Tracy's Parade"	2:11</li>
+                        <li>"New Position"	2:20</li>
+                        <li>"I Wonder U"	1:39</li>
+                        <li>"Under the Cherry Moon"	2:57</li>
+                        <li>"Girls & Boys"	5:29</li>
+                        <li>"Life Can Be So Nice"	3:13</li>
+                        <li>"Venus de Milo"	1:55</li>
+                    </ol>
+                </li>
+                </ul>
+                <div class="card-body">
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+                <!-- EXERCISE 3
+            - 4 albums per row when the screen is very large
+            - 3 albums per row when you are on a tablet (or a smaller window)
+            - 2 albums per row when you are on a small screen
+        -->
+              <div class="card col-sm-6 col-md-4 col-lg-3"><img src="images/Desireless-eagle-eye-cherry.jpg" class="card-img-top" alt="Desireless-eagle-eye-cherry">
+                <div class="card-body">
+                    <h5 class="card-title">1997</h5>
+                    <p class="card-text">First Kiss</p>
+                  </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Eagle Eye Cherry</li>
+                  <li class="list-group-item">Desireless</li>
+                  <li class="list-group-item">Swedish Pop</li>
+                  <li class="list-group-item">
+                    <ol> 
+                      <li> "Save Tonight"  3:55</li>
+                      <li> "Indecision" 5:16</li>
+                      <li> "Comatose (In the Arms of Slumber)" 4:38</li>
+                      <li>"Worried Eyes"  4:30</li>
+                      <li>"Rainbow Wings" 4:04</li>
+                      <li>"Falling in Love Again"  3:30</li>
+                      <li>"Conversation"  4:44</li>
+                  </ol>
+              </li>
+                </ul>
+                <div class="card-body">
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+              <div class="card col-sm-6 col-md-4 col-lg-3"><img src="images/Kanye-west-college-dropout.jpg" class="card-img-top" alt="Kanye-west-college-dropout">
+                <div class="card-body">
+                    <h5 class="card-title">2004</h5>
+                    <p class="card-text">High School Graduation</p>
+                  </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Kanye West</li>
+                  <li class="list-group-item">College Dropout</li>
+                  <li class="list-group-item">Hip hop</li>
+                    <li class="list-group-item">
+                        <ol> 
+                        <li>Intro (Skit)"		0:19</li>
+                        <li>"We Don't Care"	3:59</li>
+                        <li> "Graduation Day"	 1:22</li>
+                        <li>"All Falls Down"  3:43</li>
+                        <li>"I'll Fly Away"	1:09</li>
+                        <li>"Jesus Walks" 3:13</li>
+                        <li>Never Let Me Down"   5:24</li>
+                    </ol>
+                    </li>                
+                </ul>
+                <div class="card-body">
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+              <div class="card col-sm-6 col-md-4 col-lg-3"><img src="images/The_Clash_London_Calling.jpg" class="card-img-top" alt="The_Clash_London_Calling">
+                <div class="card-body">
+                  <h5 class="card-title">2012</h5>
+                  <p class="card-text">Jump Across the Pond</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">The Clash</li>
+                  <li class="list-group-item">London Callinig</li>
+                  <li class="list-group-item">Punk Rock</li>
+                  <li class="list-group-item">
+                    <ol> 
+                    <li>Intro (Skit)"		0:19</li>
+                    <li>"We Don't Care"	3:59</li>
+                    <li> "Graduation Day"	 1:22</li>
+                    <li>"All Falls Down"  3:43</li>
+                    <li>"I'll Fly Away"	1:09</li>
+                    <li>"Jesus Walks" 3:13</li>
+                    <li>Never Let Me Down"   5:24</li>
+                </ol>
+            </li>                
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-3 col-lg-1">
+                  <div class="thumbnail" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">
+                    <a href>
+                      <img src="images/Nirvana-Nevermind.jpg" alt="Nirvana-Nevermind" style="width:100%">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-1">
+                    <div class="thumbnail">
+                      <a href>
+                        <img src="images/pink-floyd-dark-side-of-the-moon.png" alt="pink-floyd-dark-side-of-the-moon" style="width:100%">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3 col-lg-1">
+                    <div class="thumbnail">
+                      <a href>
+                        <img src="images/Radiohead_ok_computer.png" alt="Radiohead_ok_computer" style=" width:100%">
+                      </a>
+                    </div>
+                  </div>
+</div>
+            </div>
+    <!-- EXERCISE 4
+            Create a section for the album review.
+            Pick one of your fav albums, and create a section with:
+            - Cover
+            - Title
+            - Band
+            - Lenght
+            - Genre
+            - Tracklist
+            - ... And whatever you think it's interesting about it!
+        -->
+
+    <!-- EXERCISE 5
+            Worst album list! Find out the music you don't really like or you find overrated and list it
+            in this "hall of shame" chart!
+        -->
+
+    <!-- EXERCISE 6
+            Do you have any musician / band you admire or you are fan of?
+            This section is dedicated to him / her / them!
+            Feel free to experiment in this part of the page.
+        -->
+
+    <!-- EXERCISE 7
+            Just covers!
+            Create a tapestry of album pictures. Every album picture must be "square" (use CSS to do that).
+            Put at least 20 covers (also repeated) to have a nice effect and see how Bootstrap handles it.
+        -->
+
+    <!-- EXERCISE 8
+            Implement a footer with some information / social links
+        -->
+
+    <!-- EXTRA:
+         EXERCISE 9
+            Create album details that are going to be toggled on and off by clicking on the album image
+        -->
+
+    <!-- EXERCISE 10
+            Add a button to each section. By clicking on it the section body appears (if hidden) or disappears (if visible)
+        -->
+
+    <!--
+            EXERCISE 11
+            Add in the footer a field that counts, on page load, how many ALBUMS are on the page 
+        -->
+  </body>
+
+   <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+      ></script>
+</html>
