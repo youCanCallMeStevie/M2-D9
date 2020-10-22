@@ -1,0 +1,66 @@
+.breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 0.5rem;
+  color: #6c757d;
+  content: ">";
+}
+
+h1 {
+  position: relative;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 40%; /* Adjust this value to move the positioned div up and down */
+  text-align: left;
+  width: 60%;
+  color: rgb(222, 224, 222);
+}
+.lead {
+  position: relative;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 50%; /* Adjust this value to move the positioned div up and down */
+  text-align: left;
+  width: 60%;
+  color: rgb(222, 224, 222);
+}
+
+.genre-badge {
+  position: absolute;
+  right: -20px;
+  top: 10px;
+  background: red;
+  text-align: center;
+  border-radius: 30px 30px 30px 30px;
+  color: white;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+.card {
+  margin-right: 2em;
+  margin-bottom: 2em;
+}
+.row {
+  justify-content: space-evenly;
+}
+
+.jumbotron {
+  background: url("images/records.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.delete-badge {
+  padding: auto;
+}
+/* tbody {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+} */

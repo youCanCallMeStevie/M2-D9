@@ -19,22 +19,24 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
 
 <html lang="en">
   <head>
-     <!-- Required meta tags -->
-     <meta charset="utf-8" />
-     <meta
-       name="viewport"
-       content="width=device-width, initial-scale=1, shrink-to-fit=no"
-     />
- 
-     <!-- Bootstrap CSS -->
-     <link
-       rel="stylesheet"
-       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-       crossorigin="anonymous">
-</head>
-<body>
-       <!-- 
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <!-- 
       /* EXERCISE 1
             For all Albums we'd like to have a consistent style.
             Create a class for:
@@ -47,263 +49,1009 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
             - etc
          */
              -->
-    
+
     <!-- EXERCISE 2 
             Implement a navigation bar using the bootstrap component
             This navigation bar must be linked to every section in your page
         -->
-        <div class = "container">
-               <!-- NAVIGATIION SECTION -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-music-note-beamed" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
-                <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
-                <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
-              </svg></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+    <div class="container">
+      <!-- NAVIGATIION SECTION -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#"
+          ><svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            class="bi bi-music-note-beamed"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"
+            />
+            <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z" />
+            <path
+              d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"
+            /></svg></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Let's Get Musical! <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#"> Action</a>
+                <a>class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#"> Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              <svg
+                width="1em"
+                height="1em"
+                viewBox="0 0 16 16"
+                class="bi bi-music-note-list"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z"
+                />
+                <path fill-rule="evenodd" d="M12 3v10h-1V3h1z" />
+                <path
+                  d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"
+                />
+              </svg>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-         </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">
-                          Action</a>
-  <a>class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">
-                      Something else here</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-music-note-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
-                    <path fill-rule="evenodd" d="M12 3v10h-1V3h1z"/>
-                    <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z"/>
-                    <path fill-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
-                  </svg></button>
-              </form>
-            </div>
-          </nav>
- <!-- HERO SECTION -->
-          <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-              <h1 class="display-4">Stevie's Music Journey</h1>
-              <p class="lead">Music Milestones</p>
-            </div>
-          </div>
-<!-- ALBUM CARDS-->
-   <div class="row">
-    <div class="card col-sm-6 col-md-4 col-lg-3"><img src="images/Prince-Parade-Cover.jpg" class="card-img-top" alt="Prince-Parade-Cover.">
+          </form>
+        </div>
+      </nav>
+    </div>
+    <!-- HERO SECTION -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+      
+        <h1 class="display-4">Stevie's Music Journey</h1>
+        <p class="lead">Music Milestones</p>
+      </div>
+    </div>
+    <!---Breadcumb-->
+    <div class="container">
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Library</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Data</li>
+      </ol>
+    </nav>
+    <!-- ALBUM CARDS-->
+    <div class="row">
+        <div class ="col-sm-6 col-md-4 col-lg-3>
+      <div class="card">
+        <img
+          src="images/Prince-Parade-Cover.jpg"
+          class="card-img-top"
+          alt="Prince-Parade-Cover."
+        />
         <div class="card-body">
-                  <h5 class="card-title">1986</h5>
-                  <p class="card-text">Birth Year</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Prince & The Revolution</li>
-                  <li class="list-group-item">Parade</li>
-                  <li class="list-group-item">Psychedelic pop</li>
-                  <li class="list-group-item">
-                      <ol> 
-                        <li>"Christopher Tracy's Parade"	2:11</li>
-                        <li>"New Position"	2:20</li>
-                        <li>"I Wonder U"	1:39</li>
-                        <li>"Under the Cherry Moon"	2:57</li>
-                        <li>"Girls & Boys"	5:29</li>
-                        <li>"Life Can Be So Nice"	3:13</li>
-                        <li>"Venus de Milo"	1:55</li>
-                    </ol>
-                </li>
-                </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
+          <h5 class="card-title">1986</h5>
+          <p class="card-text">Birth Year</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Prince & The Revolution</li>
+          <li class="list-group-item">Parade</li>
+          <li class="list-group-item genre-badge">Psychedelic pop</li>
+          <table class="table table-sm">
+            <thead>
+              <tr class = "table-dark">
+                <th scope="col">#</th>
+                <th scope="col">Track Name</th>
+                <th scope="col">Length</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Intro (Skit)</td>
+                <td>0:19</td>
+                <td class ="delete-badge"><button type="button" class="btn btn-outline-dark">Delete</button></td>
+            </tr>
+              <tr class = "table-secondary">
+                <th scope="row">2</th>
+                <td>We Don't Care</td>
+                <td>3:59</td>
+                <td class ="delete-badge"><button type="button" class="btn btn-outline-dark">Delete</button></td>
+            </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Graduation Day</td>
+                <td>1:22</td>
+                <td class ="delete-badge"><button type="button" class="btn btn-outline-dark">Delete</button></td>
+            </tr>
+            <tr>
+
+                <th><td></td><td><button
+                type="button"
+                class="btn btn-primary center"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                Add Track
+              </button></td></th>
+            </tr>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Are we missing a track? Add your fav!
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- Input field for Modal -->
+    
+                    <div class="row">
+                        <div class="col">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Track Number</label>
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Name</label>
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Length</label>
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Track Featuring</label>
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                          <div class="form-group form-check">
+                            <input
+                              type="checkbox"
+                              class="form-check-input"
+                              id="exampleCheck1"
+                            />
+                            <label class="form-check-label" for="exampleCheck1"
+                              >Live Track</label
+                            >
+                          </div>
+                        </div>
+                        <row>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                          <button type="button" class="btn btn-primary">Submit</button>
+                        </div>
+                    </row>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-                <!-- EXERCISE 3
+              
+
+
+
+
+
+              </tr>
+            </tbody>
+          </table>
+    
+    </ul>
+      </div>
+      <!-- EXERCISE 3
             - 4 albums per row when the screen is very large
             - 3 albums per row when you are on a tablet (or a smaller window)
             - 2 albums per row when you are on a small screen
         -->
-              <div class="card col-sm-6 col-md-4 col-lg-3"><img src="images/Desireless-eagle-eye-cherry.jpg" class="card-img-top" alt="Desireless-eagle-eye-cherry">
-                <div class="card-body">
-                    <h5 class="card-title">1997</h5>
-                    <p class="card-text">First Kiss</p>
-                  </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Eagle Eye Cherry</li>
-                  <li class="list-group-item">Desireless</li>
-                  <li class="list-group-item">Swedish Pop</li>
-                  <li class="list-group-item">
-                    <ol> 
-                      <li> "Save Tonight"  3:55</li>
-                      <li> "Indecision" 5:16</li>
-                      <li> "Comatose (In the Arms of Slumber)" 4:38</li>
-                      <li>"Worried Eyes"  4:30</li>
-                      <li>"Rainbow Wings" 4:04</li>
-                      <li>"Falling in Love Again"  3:30</li>
-                      <li>"Conversation"  4:44</li>
-                  </ol>
-              </li>
-                </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-              </div>
-              <div class="card col-sm-6 col-md-4 col-lg-3"><img src="images/Kanye-west-college-dropout.jpg" class="card-img-top" alt="Kanye-west-college-dropout">
-                <div class="card-body">
-                    <h5 class="card-title">2004</h5>
-                    <p class="card-text">High School Graduation</p>
-                  </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Kanye West</li>
-                  <li class="list-group-item">College Dropout</li>
-                  <li class="list-group-item">Hip hop</li>
-                    <li class="list-group-item">
-                        <ol> 
-                        <li>Intro (Skit)"		0:19</li>
-                        <li>"We Don't Care"	3:59</li>
-                        <li> "Graduation Day"	 1:22</li>
-                        <li>"All Falls Down"  3:43</li>
-                        <li>"I'll Fly Away"	1:09</li>
-                        <li>"Jesus Walks" 3:13</li>
-                        <li>Never Let Me Down"   5:24</li>
-                    </ol>
-                    </li>                
-                </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-              </div>
-              <div class="card col-sm-6 col-md-4 col-lg-3"><img src="images/The_Clash_London_Calling.jpg" class="card-img-top" alt="The_Clash_London_Calling">
-                <div class="card-body">
-                  <h5 class="card-title">2012</h5>
-                  <p class="card-text">Jump Across the Pond</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">The Clash</li>
-                  <li class="list-group-item">London Callinig</li>
-                  <li class="list-group-item">Punk Rock</li>
-                  <li class="list-group-item">
-                    <ol> 
-                    <li>Intro (Skit)"		0:19</li>
-                    <li>"We Don't Care"	3:59</li>
-                    <li> "Graduation Day"	 1:22</li>
-                    <li>"All Falls Down"  3:43</li>
-                    <li>"I'll Fly Away"	1:09</li>
-                    <li>"Jesus Walks" 3:13</li>
-                    <li>Never Let Me Down"   5:24</li>
-                </ol>
-            </li>                
-        </ul>
+      <div class="card">
+        <img
+          src="images/Desireless-eagle-eye-cherry.jpg"
+          class="card-img-top"
+          alt="Desireless-eagle-eye-cherry"
+        />
         <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+          <h5 class="card-title">1997</h5>
+          <p class="card-text">First Kiss</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Eagle Eye Cherry</li>
+          <li class="list-group-item">Desireless</li>
+          <li class="list-group-item genre-badge">Swedish Pop</li>
+          <table class="table table-sm">
+            <thead>
+              <tr class = "table-dark">
+                <th scope="col">#</th>
+                <th scope="col">Track Name</th>
+                <th scope="col">Length</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Intro (Skit)</td>
+                <td>0:19</td>
+                <td class ="delete-badge"><button type="button" class="btn btn-outline-dark">Delete</button></td>
+            </tr>
+              <tr class = "table-secondary">
+                <th scope="row">2</th>
+                <td>We Don't Care</td>
+                <td>3:59</td>
+                <td class ="delete-badge"><button type="button" class="btn btn-outline-dark">Delete</button></td>
+            </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Graduation Day</td>
+                <td>1:22</td>
+                <td class ="delete-badge"><button type="button" class="btn btn-outline-dark">Delete</button></td>
+            </tr>
+            <tr>
+
+                <th><td></td><td><button
+                type="button"
+                class="btn btn-primary center"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                Add Track
+              </button></td></th>
+            </tr>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Questions? Email us
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- Input field for Modal -->
+                    <div class="row">
+                        <div class="col">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Track Number</label>
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Name</label>
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Length</label>
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Track Featuring</label>
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="exampleInputEmail1"
+                              aria-describedby="emailHelp"
+                            />
+                          </div>
+                          <div class="form-group form-check">
+                            <input
+                              type="checkbox"
+                              class="form-check-input"
+                              id="exampleCheck1"
+                            />
+                            <label class="form-check-label" for="exampleCheck1"
+                              >Live Track</label
+                            >
+                          </div>
+                        </div>
+                        <row>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                          <button type="button" class="btn btn-primary">Submit</button>
+                        </div>
+                    </row>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+
+
+
+
+
+              </tr>
+            </tbody>
+          </table>
+    
+    </ul>
+      </div>
+      <div class="card">
+        <img
+          src="images/Kanye-west-college-dropout.jpg"
+          class="card-img-top"
+          alt="Kanye-west-college-dropout"
+        />
+        <div class="card-body">
+          <h5 class="card-title">2004</h5>
+          <p class="card-text">High School Graduation</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Kanye West</li>
+          <li class="list-group-item">College Dropout</li>
+          <li class="list-group-item genre-badge">Hip hop</li>
+          <table class="table table-sm">
+            <thead>
+              <tr class = "table-dark">
+                <th scope="col">#</th>
+                <th scope="col">Track Name</th>
+                <th scope="col">Length</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Intro (Skit)</td>
+                <td>0:19</td>
+                <td class ="delete-badge"><button type="button" class="btn btn-outline-dark">Delete</button></td>
+            </tr>
+              <tr class = "table-secondary">
+                <th scope="row">2</th>
+                <td>We Don't Care</td>
+                <td>3:59</td>
+                <td class ="delete-badge"><button type="button" class="btn btn-outline-dark">Delete</button></td>
+            </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Graduation Day</td>
+                <td>1:22</td>
+                <td class ="delete-badge"><button type="button" class="btn btn-outline-dark">Delete</button></td>
+            </tr>
+            <tr>
+
+                <th><td></td><td><button
+                    type="button"
+                    class="btn btn-primary center add-track"
+                    data-toggle="modal"
+                    data-target="#exampleModal"
+                  >
+                    Add Track
+                  </button></td></th>
+                </tr>
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Are we missing a track? Add your fav!
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Input field for Modal -->
+                        <div class="row">
+                            <div class="col">
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">Track Number</label>
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  id="exampleInputEmail1"
+                                  aria-describedby="emailHelp"
+                                />
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">Name</label>
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  id="exampleInputEmail1"
+                                  aria-describedby="emailHelp"
+                                />
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">Length</label>
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  id="exampleInputEmail1"
+                                  aria-describedby="emailHelp"
+                                />
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">Track Featuring</label>
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  id="exampleInputEmail1"
+                                  aria-describedby="emailHelp"
+                                />
+                              </div>
+                              <div class="form-group form-check">
+                                <input
+                                  type="checkbox"
+                                  class="form-check-input"
+                                  id="exampleCheck1"
+                                />
+                                <label class="form-check-label" for="exampleCheck1"
+                                  >Live Track</label
+                                >
+                              </div>
+                            </div>
+                            <row>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button type="button" class="btn btn-primary">Submit</button>
+                            </div>
+                        </row>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+
+
+
+
+              </tr>
+            </tbody>
+          </table>
+    
+    </ul>
+        
+      </div>
+      <div class="card">
+        <img
+          src="images/The_Clash_London_Calling.jpg"
+          class="card-img-top"
+          alt="The_Clash_London_Calling"
+        />
+        <div class="card-body">
+          <h5 class="card-title">2012</h5>
+          <p class="card-text">Jump Across the Pond</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">The Clash</li>
+          <li class="list-group-item">London Calling</li>
+          <li class="list-group-item genre-badge">Punk Rock</li>
+            <table class="table table-sm">
+                <thead>
+                  <tr class = "table-dark">
+                    <th scope="col">#</th>
+                    <th scope="col">Track Name</th>
+                    <th scope="col">Length</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Intro (Skit)</td>
+                    <td>0:19</td>
+                    <td class ="delete-badge"><button type="button" class="btn btn-outline-dark">Delete</button></td>
+                  </tr>
+                  <tr class = "table-secondary">
+                    <th scope="row">2</th>
+                    <td>We Don't Care</td>
+                    <td>3:59</td>
+                    <td class ="delete-badge"><button type="button" class="btn btn-outline-dark">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Graduation Day</td>
+                    <td>1:22</td>
+                    <td class ="delete-badge"><button type="button" class="btn btn-outline-dark">Delete</button></td>
+                  </tr>
+                  <tr>
+
+                    <th><td></td><td><button
+                    type="button"
+                    class="btn btn-primary center add-track"
+                    data-toggle="modal"
+                    data-target="#exampleModal"
+                  >
+                    Add Track
+                  </button></td></th>
+                </tr>
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Are we missing a track? Add your fav!
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <!-- Input field for Modal -->
+                        <div class="row">
+                            <div class="col">
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">Track Number</label>
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  id="exampleInputEmail1"
+                                  aria-describedby="emailHelp"
+                                />
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">Name</label>
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  id="exampleInputEmail1"
+                                  aria-describedby="emailHelp"
+                                />
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">Length</label>
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  id="exampleInputEmail1"
+                                  aria-describedby="emailHelp"
+                                />
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">Track Featuring</label>
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  id="exampleInputEmail1"
+                                  aria-describedby="emailHelp"
+                                />
+                              </div>
+                              <div class="form-group form-check">
+                                <input
+                                  type="checkbox"
+                                  class="form-check-input"
+                                  id="exampleCheck1"
+                                />
+                                <label class="form-check-label" for="exampleCheck1"
+                                  >Live Track</label
+                                >
+                              </div>
+                            </div>
+                            <row>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                              <button type="button" class="btn btn-primary">Submit</button>
+                            </div>
+                        </row>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+
+
+
+                  </tr>
+                </tbody>
+              </table>
+        
+        </ul>
+        
+      </div>
+      <div class="col-lg-4">
+          <div class="card">
+          <div
+            class="thumbnail"
+            data-toggle="popover"
+            title="Popover title"
+            data-content="And here's some amazing content. It's very engaging. Right?"
+          >
+            <a href>
+              <img
+                src="images/Nirvana-Nevermind.jpg"
+                alt="Nirvana-Nevermind"
+                style="width: 100%"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="thumbnail">
+            <a href>
+              <img
+                src="images/pink-floyd-dark-side-of-the-moon.png"
+                alt="pink-floyd-dark-side-of-the-moon"
+                style="width: 100%"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="thumbnail">
+            <a href>
+              <img
+                src="images/Radiohead_ok_computer.png"
+                alt="Radiohead_ok_computer"
+                style="width: 100%"
+              />
+            </a>
+          </div>
         </div>
       </div>
-            <div class="row">
-                <div class="col-sm-6 col-md-3 col-lg-1">
-                  <div class="thumbnail" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">
-                    <a href>
-                      <img src="images/Nirvana-Nevermind.jpg" alt="Nirvana-Nevermind" style="width:100%">
-                    </a>
+    </div>
+    <footer>
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col">
+              <ul style="list-style: none">
+                <li class = "mt-2">© 2020, Stephanie Flanagan</li>
+              </ul>
+            </div>
+            <div class="col">
+                <ul style="list-style: none">
+                  <li class = "mt-2">
+
+
+
+
+
+                  <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                >
+                  Contact Us
+                </button>
+              </p> </li>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Questions? Email us
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- Input field for Modal -->
+      
+                      <div class="input-group mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Recipient's username"
+                          aria-label="Recipient's username"
+                          aria-describedby="basic-addon2"
+                        />
+                        <div class="input-group-append">
+                          <span class="input-group-text" id="basic-addon2"
+                            >@example.com</span
+                          >
+                        </div>
+                      </div>
+                      <div class="input-group">
+                        <textarea
+                          class="form-control"
+                          aria-label="With textarea"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Save changes
+                      </button>
+                    </div>
                   </div>
                 </div>
-                <div class="col-sm-6 col-md-3 col-lg-1">
-                    <div class="thumbnail">
-                      <a href>
-                        <img src="images/pink-floyd-dark-side-of-the-moon.png" alt="pink-floyd-dark-side-of-the-moon" style="width:100%">
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-3 col-lg-1">
-                    <div class="thumbnail">
-                      <a href>
-                        <img src="images/Radiohead_ok_computer.png" alt="Radiohead_ok_computer" style=" width:100%">
-                      </a>
-                    </div>
-                  </div>
-</div>
-            </div>
-    <!-- EXERCISE 4
-            Create a section for the album review.
-            Pick one of your fav albums, and create a section with:
-            - Cover
-            - Title
-            - Band
-            - Lenght
-            - Genre
-            - Tracklist
-            - ... And whatever you think it's interesting about it!
-        -->
+              </div>
 
-    <!-- EXERCISE 5
-            Worst album list! Find out the music you don't really like or you find overrated and list it
-            in this "hall of shame" chart!
-        -->
+
+
+
+
+
+
+
+                </ul>
+              </div>
+            <div class="col">
+              <ul style="list-style: none">
+                <a href="#"><li>Let's Get Musical</li></a>
+                <a href="#">
+                  <li>Link</li>
+                </a>
+                <a href="#"><li>Dropdown</li></a>
+                <a href="#"><li>Disabled</li></a>
+                <a href="#"><li>Search</li></a>
+              </ul>
+            </div>
+        </div>
+      </footer>  
+    
 
     <!-- EXERCISE 6
-            Do you have any musician / band you admire or you are fan of?
-            This section is dedicated to him / her / them!
-            Feel free to experiment in this part of the page.
+            Add a DELETE bootstrap button on each row of the tracklist, with appropriate transitions on the various pseudo-class states 
+            which will apply for the subsequent button you'll use.
+            Clicking on the button the row must disappear. 
+            Add a fade-out effect using a CSS transition effect
         -->
 
-    <!-- EXERCISE 7
-            Just covers!
-            Create a tapestry of album pictures. Every album picture must be "square" (use CSS to do that).
-            Put at least 20 covers (also repeated) to have a nice effect and see how Bootstrap handles it.
-        -->
 
-    <!-- EXERCISE 8
-            Implement a footer with some information / social links
-        -->
-
-    <!-- EXTRA:
-         EXERCISE 9
-            Create album details that are going to be toggled on and off by clicking on the album image
+    <!-- EXERCISE 9
+            Add a button "Add Track" under the track list the album, add a nice shadow transition when the button is hovered
         -->
 
     <!-- EXERCISE 10
-            Add a button to each section. By clicking on it the section body appears (if hidden) or disappears (if visible)
+            On "Add Track" button, open a new modal.
+            The modal shall contain a form with:
+            - Track number
+            - Track name
+            - Track length
+            - Track featuring
+            - Live Track (checkbox)
+            The fields should be inside an Input Group and divided in 2 columns.
         -->
 
-    <!--
-            EXERCISE 11
-            Add in the footer a field that counts, on page load, how many ALBUMS are on the page 
+    <!-- EXERCISE 11
+            Add 2 bootstrap buttons at the bottom of the modal window:
+            - Close => clear the fields and close the modal
+            - Add => Add the track to the list of tracks in the main page and display an alert success message 
+            - The new list-element added to the list will appear with a fade-in transition effect
+            https://getbootstrap.com/docs/4.4/components/alerts/
+            [EXTRA] Make the message disappear after 5 seconds
+            https://www.w3schools.com/jsref/met_win_settimeout.asp
+        -->
+
+    <!-- EXERCISE 12
+            All the field (except for Feat. and Live Track) are required fields and requires validation.
+            If the user clicks on the Add button and some fields are empty, a warning alert must be show
+        -->
+
+    <!-- ############### -->
+    <!-- ###  EXTRA  ### -->
+    <!-- ############### -->
+
+    <!-- EXERCISE 13
+            For each "Album cover" in your page, add a tooltip with the title
+        -->
+
+    <!-- EXERCISE 14
+            Update the header and footer links using scrollspy to render a smooth transition to the parts of the document.
+        -->
+
+    <!-- EXERCISE 15
+            Add a Album Carousel with controls to display the top 10 albums
+        -->
+
+    <!-- EXERCISE 16
+            Make every section of the page "collapsable" if the user clicks on the section title
         -->
   </body>
 
-   <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-      ></script>
+  <script>
+       function deleteSongTrack() {
+        let deleteButton = document.querySelectorAll(
+          "td .button"
+        );
+        deleteButton.onclick = function () {
+          let songRemove = document.querySelector(".blog-post:last-of-type");
+          songRemove.remove();
+        };
+      }
+    </script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"
+  ></script>
 </html>
