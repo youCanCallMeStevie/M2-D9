@@ -41,7 +41,7 @@ h1 {
 }
 
 .card {
-  margin-right: 2em;
+  margin-right: 3em;
   margin-bottom: 2em;
 }
 .row {
@@ -56,11 +56,26 @@ h1 {
   background-position: center;
 }
 
-.delete-badge {
+/* .delete-badge {
   padding: auto;
-}
+} */
 /* tbody {
   text-align: center;
   justify-content: center;
   align-items: center;
 } */
+
+.btn.delete:hover {
+  transform: skewX(25deg);
+}
+
+.navbar {
+  z-index: 9999;
+  /* margin-left: 20em;
+  margin-right: 20em; */
+  background-color: lightgrey;
+}
+
+.navbar-brand {
+  margin-left: 10em;
+}

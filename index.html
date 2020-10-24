@@ -54,9 +54,9 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
             Implement a navigation bar using the bootstrap component
             This navigation bar must be linked to every section in your page
         -->
-    <div class="container">
+  
       <!-- NAVIGATIION SECTION -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fluid sticky-top">
         <a class="navbar-brand" href="#"
           ><svg
             width="1em"
@@ -155,7 +155,7 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
           </form>
         </div>
       </nav>
-    </div>
+   
     <!-- HERO SECTION -->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
@@ -176,7 +176,7 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
     </nav>
     <!-- ALBUM CARDS-->
     <div class="row">
-        <div class ="col-sm-6 col-md-4 col-lg-3>
+        <div class ="col-sm-6 col-md-4 col-lg-2>
       <div class="card">
         <img
           src="images/Prince-Parade-Cover.jpg"
@@ -190,7 +190,7 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
         <ul class="list-group list-group-flush">
           <li class="list-group-item">Prince & The Revolution</li>
           <li class="list-group-item">Parade</li>
-          <li class="list-group-item genre-badge">Psychedelic pop</li>
+          <li class="list-group-item genre-badge">Pop</li>
           <table class="table table-sm">
             <thead>
               <tr class = "table-dark">
@@ -205,19 +205,19 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
                 <th scope="row">1</th>
                 <td>Intro (Skit)</td>
                 <td>0:19</td>
-                <td class ="delete-badge"><button type="button" class="btn btn-outline-dark">Delete</button></td>
+                <td class ="delete-badge"><button type="button" class="btn btn-outline-dark delete">Delete</button></td>
             </tr>
               <tr class = "table-secondary">
                 <th scope="row">2</th>
                 <td>We Don't Care</td>
                 <td>3:59</td>
-                <td class ="delete-badge"><button type="button" class="btn btn-outline-dark">Delete</button></td>
+                <td class ="delete-badge"><button type="button" class="btn btn-outline-dark delete">Delete</button></td>
             </tr>
               <tr>
                 <th scope="row">3</th>
                 <td>Graduation Day</td>
                 <td>1:22</td>
-                <td class ="delete-badge"><button type="button" class="btn btn-outline-dark">Delete</button></td>
+                <td class ="delete-badge"><button type="button" class="btn btn-outline-dark delete">Delete</button></td>
             </tr>
             <tr>
 
@@ -814,13 +814,10 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
         </ul>
         
       </div>
-      <div class="col-lg-4">
+      <div class="row">
           <div class="card">
           <div
             class="thumbnail"
-            data-toggle="popover"
-            title="Popover title"
-            data-content="And here's some amazing content. It's very engaging. Right?"
           >
             <a href>
               <img
@@ -853,6 +850,39 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
             </a>
           </div>
         </div>
+        <div class="card">
+            <div class="thumbnail">
+              <a href>
+                <img
+                  src="images/Rolling_stones_Exile_Main_St.jpg"
+                  alt="Rolling_stones_Exile_Main_St"
+                  style="width: 100%"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="thumbnail">
+              <a href>
+                <img
+                  src="images/The_beatles_Revolver.jpg"
+                  alt="The_beatles_Revolver"
+                  style="width: 100%"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="thumbnail">
+              <a href>
+                <img
+                  src="images/Marvin_Gaye_What's_Going_On.jpg"
+                  alt="Marvin_Gaye_What"
+                  style="width: 100%"
+                />
+              </a>
+            </div>
+          </div>
       </div>
     </div>
     <footer>
